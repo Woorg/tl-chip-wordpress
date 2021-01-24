@@ -1,0 +1,28 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+
+.feedback__forum-list {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 48px;
+}
+
+.title {
+    font-size: 45px;
+}
+
+h1.title_inst.has-white-color.has-text-color.has-background {
+    font-weight: 800;
+    padding-left: 20%;
+}</style>
+<!-- end Simple Custom CSS and JS -->

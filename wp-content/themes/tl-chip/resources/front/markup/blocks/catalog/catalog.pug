@@ -1,0 +1,554 @@
+include ../filter/filter
+
+mixin catalog(data)
+    .catalog&attributes(attributes)
+        .catalog__in.container
+            h2.catalog__title.title.title Выполняем чип-тюнинг для разных авто
+            .catalog__list.flex
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-1.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus LX450 4.5d
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-2.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus RX 200t
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +21%
+                                    dd.card__desc.flex
+                                        .card__from 238
+                                        .card__arrow →
+                                        .card__to 290 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +20%
+                                    dd.card__desc.flex
+                                        .card__from 350
+                                        .card__arrow →
+                                        .card__to 420 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-3.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus RX 200t
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-1.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus LX450 4.5d
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-2.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus RX 200t
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +21%
+                                    dd.card__desc.flex
+                                        .card__from 238
+                                        .card__arrow →
+                                        .card__to 290 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +20%
+                                    dd.card__desc.flex
+                                        .card__from 350
+                                        .card__arrow →
+                                        .card__to 420 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-3.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus RX 200t
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-1.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus LX450 4.5d
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-2.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus RX 200t
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +21%
+                                    dd.card__desc.flex
+                                        .card__from 238
+                                        .card__arrow →
+                                        .card__to 290 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +20%
+                                    dd.card__desc.flex
+                                        .card__from 350
+                                        .card__arrow →
+                                        .card__to 420 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-3.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus RX 200t
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+
+mixin catalog-full(data)
+    section.catalog.catalog_w_filter&attributes(attributes)
+        .catalog__in.container
+            .catalog__top.flex
+                h1.catalog__title.title.title Каталог
+                +filter().catalog__filter
+            .catalog__list.flex
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-1.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus LX450 4.5d
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-2.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus RX 200t
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +21%
+                                    dd.card__desc.flex
+                                        .card__from 238
+                                        .card__arrow →
+                                        .card__to 290 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +20%
+                                    dd.card__desc.flex
+                                        .card__from 350
+                                        .card__arrow →
+                                        .card__to 420 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-3.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus RX 200t
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-1.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus LX450 4.5d
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-2.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus RX 200t
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +21%
+                                    dd.card__desc.flex
+                                        .card__from 238
+                                        .card__arrow →
+                                        .card__to 290 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +20%
+                                    dd.card__desc.flex
+                                        .card__from 350
+                                        .card__arrow →
+                                        .card__to 420 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-3.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus RX 200t
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-1.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus LX450 4.5d
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-2.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus RX 200t
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +21%
+                                    dd.card__desc.flex
+                                        .card__from 238
+                                        .card__arrow →
+                                        .card__to 290 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +20%
+                                    dd.card__desc.flex
+                                        .card__from 350
+                                        .card__arrow →
+                                        .card__to 420 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.catalog__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-3.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus RX 200t
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})

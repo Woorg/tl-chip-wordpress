@@ -1,0 +1,12 @@
+mixin video(data)
+    section.video&attributes(attributes)
+        .video__in.container
+            .video__row.flex
+                .video__col
+                    .video__content
+                        h2.video__title.title.title_big Наши видео
+                        .video__text Наш видео ответ на часто возникающие вопросы по чип тюнингу TOYOTA & LEXUS
+                        a.video__more(href="#") Смотреть
+                            != pugHelpers.Icon.call(locals, {iconName: 'video-arrow', className: 'video__more-icon'})
+                .video__col
+                    |<iframe class="video__object" width="560" height="315" src="https://www.youtube.com/embed/UCuP4vhCz4c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

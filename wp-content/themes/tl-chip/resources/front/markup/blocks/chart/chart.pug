@@ -1,0 +1,40 @@
+mixin chart(data)
+    .chart&attributes(attributes)
+        .chart__in.container
+            h2.chart__title.title График замера мощности
+            .chart__charts
+                .chart__chart
+                    .chart__chart-in
+                        .chart__chart-title Land Cruiser 200, 4.5D (после 2016 г.в.)
+                        .chart__object
+                            img(src="assets/images/content/chart-img-1.png", alt="")
+                .chart__chart
+                    .chart__chart-in
+                        .chart__chart-title Land Cruiser 200, 4.5D (до 2016 г.в.)
+                        .chart__object
+                            img.lazy(data-src="assets/images/content/chart-img-1.png", alt="")
+
+            .chart__text.text
+                p TOYOTA LAND CRUISER 200 с дизельным двигателем, поставляемая на российский рынок с дефорсированным (сниженная мощность) двигателем 235 л.с., имеет родную мощность на европейском рынке практически 300 л.с.
+
+                p Вывод — мощность, полученная в результате чип тюнинга ECU TOYOTA, заранее заложена производителем TOYOTA MOTOR RUS во все дизельные двигатели.
+
+mixin chart-wo-title(data)
+    .chart&attributes(attributes)
+        .chart__in.container
+            h2.chart__title.title График замера мощности
+            .chart__charts
+                .chart__chart
+                    .chart__object
+                        img(src="assets/images/content/chart-img-1.png", alt="")
+                .chart__chart
+                    .chart__object
+                        img.lazy(data-src="assets/images/content/chart-img-1.png", alt="")
+
+            .chart__text.text
+                p Чип тюнинг дизельного мотора Lexus LX III более чем ощутимо меняет динамические характеристики авто. Автомобиль можно сказать едет совсем иначе, более того — это абсолютно другой автомобиль.Качественный прирост мощности и крутящего момента на всех оборотах, эластичность, полное устранение или значительное уменьшение провалов при разгоне, включение турбины на более низких оборотах, четкое переключение передач, снижение расхода топлива — вот основные плюсы чиповки дизельного двигателя Lexus.
+
+            .chart__videos
+                .chart__video
+                    .chart__video-object
+                        |<iframe width="560" height="315" src="https://www.youtube.com/embed/QoxaBrsPlqU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

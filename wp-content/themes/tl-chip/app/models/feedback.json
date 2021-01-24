@@ -1,0 +1,77 @@
+{
+  "active": true,
+  "type": "cpt",
+  "name": "Feedbacks",
+  "supports": [
+    "title",
+    "editor",
+    "comments",
+    "revisions",
+    "trackbacks",
+    "author",
+    "excerpt",
+    "page-attributes",
+    "thumbnail",
+    "custom-fields",
+    "post-formats"
+  ],
+  "labels": {
+    "has_one": "Отзыв",
+    "has_many": "Отзывы",
+    "text_domain": "sage",
+    "overrides": {
+      "name": "Отзывы",
+      "singular_name": "Отзыв",
+      "menu_name": "Отзывы",
+      "name_admin_bar": "Отзывы",
+      "add_new": "Добавить Отзыв",
+      "add_new_item": "Добавить новый Отзыв",
+      "edit_item": "Редактировать Отзыв",
+      "new_item": "Новый Отзыв",
+      "view_item": "Смотреть Отзыв",
+      "view_items": "Смотреть Отзывы",
+      "search_items": "Поиск Отзыва",
+      "not_found": "Отзывов не найдено.",
+      "not_found_in_trash": "В корзине ничего не найдено.",
+      "parent_item-colon": "Родительские Отзывы:",
+      "all_items": "Все Отзывы",
+      "archives": "Архив Отзывов",
+      "attributes": "Атрибуты Отзыва",
+      "insert_into_item": "Вставить в Отзыв",
+      "uploaded_to_this_item": "Загружено в этот Отзыв",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "фильтровать список Отзывов",
+      "items_list_navigation": "Навигация по списку Отзывов",
+      "items_list": "Список Отзывов"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_rest": true,
+    "query_var": true,
+    "has_archive": true,
+    "show_in_graphql": true,
+    "graphql_single_name": "feedback",
+    "graphql_plural_name": "feedbacks",
+    "hierarchical": true,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+      "model",
+      "category"
+    ],
+    "rewrite": {
+      "slug": "feedbacks",
+      "with_front": true,
+      "feeds": true,
+      "pages": true
+    }
+  }
+}

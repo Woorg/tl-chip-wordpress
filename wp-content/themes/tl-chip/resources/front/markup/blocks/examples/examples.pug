@@ -1,0 +1,351 @@
+mixin examples(data)
+    section.examples
+        .examples__in.container
+            h2.examples__title.title Примеры работ
+            .examples__text.text
+                p Наше программное обеспечение многократно протестировано на Toyota и Lexus, так как мы сконцентрированы на данном бренде, что подтверждено отзывами автовладельцев.
+
+
+            .examples__list.flex
+                article.examples__card.card.card_w_examples
+                    .card__in
+                        .card__examples.flex
+                            a.card__photo(href="assets/images/content/card-example-1.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-1.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-2.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-2.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-3.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-3.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-4.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-4.jpg", alt="")
+
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus LX450 4.5d
+                            .card__title Чип тюнинг Lexus LX450D (4,5D)
+                            dl.card__list
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Перепрограммирование электронного блока управления
+                                    dd.card__desc через штатный разъем OBD2
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Оборудование
+                                    dd.card__desc Toyota Lexus ECU Flasher
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Прошивка
+                                    dd.card__desc TL CHIP
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Время
+                                    dd.card__desc 40 минут
+
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Читать отзыв
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.examples__card.card.card_w_examples
+                    .card__in
+                        .card__examples.flex
+                            a.card__photo(href="assets/images/content/card-example-1.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-1.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-2.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-2.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-3.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-3.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-4.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-4.jpg", alt="")
+
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus LX450 4.5d
+                            .card__title Чип тюнинг Lexus LX450D (4,5D)
+                            dl.card__list
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Перепрограммирование электронного блока управления
+                                    dd.card__desc через штатный разъем OBD2
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Оборудование
+                                    dd.card__desc Toyota Lexus ECU Flasher
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Прошивка
+                                    dd.card__desc TL CHIP
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Время
+                                    dd.card__desc 40 минут
+
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Читать отзыв
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.examples__card.card.card_w_examples
+                    .card__in
+                        .card__examples.flex
+                            a.card__photo(href="assets/images/content/card-example-1.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-1.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-2.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-2.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-3.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-3.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-4.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-4.jpg", alt="")
+
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus LX450 4.5d
+                            .card__title Чип тюнинг Lexus LX450D (4,5D)
+                            dl.card__list
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Перепрограммирование электронного блока управления
+                                    dd.card__desc через штатный разъем OBD2
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Оборудование
+                                    dd.card__desc Toyota Lexus ECU Flasher
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Прошивка
+                                    dd.card__desc TL CHIP
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Время
+                                    dd.card__desc 40 минут
+
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Читать отзыв
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.examples__card.card.card_w_examples
+                    .card__in
+                        .card__examples.flex
+                            a.card__photo(href="assets/images/content/card-example-1.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-1.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-2.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-2.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-3.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-3.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-4.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-4.jpg", alt="")
+
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus LX450 4.5d
+                            .card__title Чип тюнинг Lexus LX450D (4,5D)
+                            dl.card__list
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Перепрограммирование электронного блока управления
+                                    dd.card__desc через штатный разъем OBD2
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Оборудование
+                                    dd.card__desc Toyota Lexus ECU Flasher
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Прошивка
+                                    dd.card__desc TL CHIP
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Время
+                                    dd.card__desc 40 минут
+
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Читать отзыв
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.examples__card.card.card_w_examples
+                    .card__in
+                        .card__examples.flex
+                            a.card__photo(href="assets/images/content/card-example-1.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-1.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-2.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-2.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-3.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-3.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-4.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-4.jpg", alt="")
+
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus LX450 4.5d
+                            .card__title Чип тюнинг Lexus LX450D (4,5D)
+                            dl.card__list
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Перепрограммирование электронного блока управления
+                                    dd.card__desc через штатный разъем OBD2
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Оборудование
+                                    dd.card__desc Toyota Lexus ECU Flasher
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Прошивка
+                                    dd.card__desc TL CHIP
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Время
+                                    dd.card__desc 40 минут
+
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Читать отзыв
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.examples__card.card.card_w_examples
+                    .card__in
+                        .card__examples.flex
+                            a.card__photo(href="assets/images/content/card-example-1.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-1.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-2.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-2.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-3.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-3.jpg", alt="")
+                            a.card__photo(href="assets/images/content/card-example-4.jpg")
+                                img.lazy(data-src="assets/images/content/card-example-4.jpg", alt="")
+
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus LX450 4.5d
+
+                            .card__title Чип тюнинг Lexus LX450D (4,5D)
+                            dl.card__list
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Перепрограммирование электронного блока управления
+                                    dd.card__desc через штатный разъем OBD2
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Оборудование
+                                    dd.card__desc Toyota Lexus ECU Flasher
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Прошивка
+                                    dd.card__desc TL CHIP
+
+                                .card__list-item.card__list-item_n_brake
+
+                                    dt.card__term Время
+                                    dd.card__desc 40 минут
+
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Читать отзыв
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})

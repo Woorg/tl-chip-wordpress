@@ -1,0 +1,21 @@
+include ../logo/logo.pug
+include ../nav/nav.pug
+include ../phone/phone.pug
+include ../social/social.pug
+
+
+mixin footer(data)
+    footer.footer&attributes(attributes)
+        .footer__container.container
+            .footer__top.flex
+                .footer__row.flex
+                    a.footer__logo.logo(href="#")
+                        != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__icon'})
+
+                .footer__row.flex
+                    .footer__text Федеральная сеть №1 по чип тюнингу Toyota и Lexus
+                    +phone-w-text().phone_w_text.footer__phone
+
+            .footer__bottom.flex
+                .footer__copyright &copy; 2020 Landify UI Kit. All rights reserved
+                +social().footer__social

@@ -1,0 +1,19 @@
+include ../logo/logo.pug
+include ../nav/nav.pug
+include ../phone/phone.pug
+include ../social/social.pug
+
+mixin header(data)
+    header.header&attributes(attributes)
+        .header__container.container.flex
+
+            a.header__logo.logo(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__icon'})
+
+            +nav().header__nav
+
+            .header__contacts.flex
+
+                +social().header__social
+
+                +phone().header__phone

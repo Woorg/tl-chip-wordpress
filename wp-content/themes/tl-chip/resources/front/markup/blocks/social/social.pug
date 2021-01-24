@@ -1,0 +1,15 @@
+mixin social(data)
+    ul.social.flex&attributes(attributes)
+        li.social__item
+            a.social__link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'inst-icon', className: 'social__icon', iconWidth: '14', iconHeight: '14'})
+        li.social__item
+            a.social__link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'social__icon', iconWidth: '12', iconHeight: '12'})
+        li.social__item
+            a.social__link(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'youtube-icon', className: 'social__icon', iconWidth: '14', iconHeight: '10'})
+        li.social__item.social__item_w_text
+            a.social__link(href="#") DRIVE 2
+        li.social__item.social__item_w_text
+            a.social__link(href="#") PRADO-CLUB

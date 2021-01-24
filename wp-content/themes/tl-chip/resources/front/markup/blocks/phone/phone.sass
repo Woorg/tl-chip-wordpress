@@ -1,0 +1,27 @@
+.phone
+    line-height: 1
+    &__link
+        color: $white
+        font-size: 16px
+        font-weight: 700
+        text-decoration: none
+        +tr(.3s linear)
+        &:hover
+            color: darken($white, 10)
+            +tr(.3s linear)
+
+
+.phone_w_text
+    .phone__link
+        color: #fff
+        font-size: 18px
+    .phone__text
+        margin-top: 10px
+        margin-left: 0
+        width: 100%
+        color: #969bab
+        font-weight: 400
+        +mq($medium)
+            margin-top: 0
+            margin-left: 24px
+            width: auto

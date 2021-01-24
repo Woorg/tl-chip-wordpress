@@ -1,0 +1,62 @@
+html,
+body
+  height: 100%
+
+.page
+  position: relative
+  padding-top: 153px
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  background: #fff
+  color: $black
+  font-display: swap
+  font-family: $ma
+  font-weight: 400
+  font-size: 14px
+  line-height: 1.714
+  +mq($large)
+    // padding-top: 72px
+    padding-top: 78px
+  &__inner
+    flex-grow: 1
+    flex-shrink: 0
+    flex-basis: auto
+
+  &__in
+    padding-top: (48px / 2)
+    padding-bottom: (48px / 2)
+    +mq($small)
+      padding-top: 48px
+      padding-bottom: 48px
+    .page__title
+      margin-bottom: (48px / 2)
+      line-height: 1.333
+      +mq($small)
+        margin-bottom: 48px
+
+.page_inner
+  padding-top: 153px
+  +mq($large)
+    // padding-top: 72px
+    padding-top: 78px
+
+
+.container
+  margin-right: auto
+  margin-left: auto
+  padding-right: 15px
+  padding-left: 15px
+  max-width: 100%
+  width: auto
+  +mq($large)
+    padding-right: 30px
+    padding-left: 30px
+    max-width: 1170px
+    width: 100%
+
+  // min-width: 320px
+
+img
+  max-width: 100%
+  height: auto

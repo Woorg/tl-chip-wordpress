@@ -1,0 +1,37 @@
+include ../benefits/benefits.pug
+include ../chart/chart.pug
+
+
+
+mixin car(data)
+    section.car&attributes(attributes)
+        .car__top-w
+            .car__top
+                img(src="assets/images/content/car-top-bg.jpg", alt="")
+
+            .car__in.container.flex
+                a.car__back(href="#")
+                    != pugHelpers.Icon.call(locals, {iconName: 'video-arrow', className: 'car__back-icon'})
+                    | Lexus RX 200t
+
+                h1.car__title.title Land Cruiser 200
+
+        +benefits().car__benefits
+        +chart().car__chart
+
+
+mixin car-v2(data)
+    section.car&attributes(attributes)
+        .car__top-w
+            .car__top
+                img(src="assets/images/content/car-top-bg.jpg", alt="")
+
+            .car__in.container.flex
+                a.car__back(href="#")
+                    != pugHelpers.Icon.call(locals, {iconName: 'video-arrow', className: 'car__back-icon'})
+                    | Lexus RX 200t
+
+                h1.car__title.title Land Cruiser 200
+
+        +benefits-wo-grid().car__benefits
+        +chart-wo-title().car__chart

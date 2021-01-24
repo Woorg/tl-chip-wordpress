@@ -1,0 +1,41 @@
+mixin warranty(data)
+    section.warranty
+        .warranty__in.container
+            h1.warranty__title.title Наши гарантийные <br/>обязательства
+
+            .warranty__text.text
+                p Чип тюнинг двигателя TOYOTA и LEXUS — это модификация (усовершенствование) программы <br/>ECU (Electronic Control Unit) двигателя.
+                p Результатом нашей работы является прирост мощности (лошадиных сил) TOYOTA и LEXUS, а также изменение крутящего момента (Нм). Мощность влияет на скоростные характеристики автомобиля, крутящий момент на динамику разгона.
+
+            ul.warranty__liabilities.flex
+                li.warranty__liabilities-item
+                    .warranty__liabilities-in.flex
+                        .warranty__liabilities-image
+                            != pugHelpers.Icon.call(locals, {iconName: 'warranty-icon-1', className: 'warranty__liabilities-icon'})
+                        .warranty__liabilities-entry
+                            .warranty__liabilities-title Исправность ECU
+                            .warranty__liabilities-text Гарантию на исправность блока управления двигателем (ECU) на всех этапах работ
+
+                li.warranty__liabilities-item
+                    .warranty__liabilities-in.flex
+                        .warranty__liabilities-image
+                            != pugHelpers.Icon.call(locals, {iconName: 'warranty-icon-2', className: 'warranty__liabilities-icon'})
+                        .warranty__liabilities-entry
+                            .warranty__liabilities-title Бесплатный откат
+                            .warranty__liabilities-text Бесплатное восстановление (откат) на заводскую прошивку
+
+                li.warranty__liabilities-item
+                    .warranty__liabilities-in.flex
+                        .warranty__liabilities-image
+                            != pugHelpers.Icon.call(locals, {iconName: 'warranty-icon-3', className: 'warranty__liabilities-icon'})
+                        .warranty__liabilities-entry
+                            .warranty__liabilities-title Дилерская гарантия
+                            .warranty__liabilities-text Сохранение дилерской гарантии (чип тюнинг выполняется на базе заводской версии софта)
+
+                li.warranty__liabilities-item
+                    .warranty__liabilities-in.flex
+                        .warranty__liabilities-image
+                            != pugHelpers.Icon.call(locals, {iconName: 'warranty-icon-4', className: 'warranty__liabilities-icon'})
+                        .warranty__liabilities-entry
+                            .warranty__liabilities-title Бесплатное восстановление
+                            .warranty__liabilities-text Бесплатное восстановление тюнинговой прошивки, в случае ее обновления официальным дилером

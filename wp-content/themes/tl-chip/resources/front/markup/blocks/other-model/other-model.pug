@@ -1,0 +1,10 @@
+mixin other-model(data)
+    section.other-model
+        .other-model__in.container.flex
+            .other-model__content
+                h2.other-model__title.title Другая модель Lexus или Toyota?
+                .other-model__text Тогда посмотрите полный список автомобилей, для которых <br/>доступен чип тюнинг в компании TL CHIP, и узнайте результат <br/>прироста мощности на Вашем автомобиле
+                a.other-model__link(href="#") Смотреть
+                    != pugHelpers.Icon.call(locals, {iconName: 'video-arrow', className: 'other-model__icon'})
+
+            img.other-model__image(src="assets/images/content/other-model.png", alt="")

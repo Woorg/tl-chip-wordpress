@@ -1,0 +1,58 @@
+{
+  "active": true,
+  "type": "cat",
+  "name": "capacity",
+  "links": [
+    "cars"
+  ],
+  "labels": {
+    "has_one": "Объём двигателя",
+    "has_many": "Объём двигателя",
+    "text_domain": "sage",
+    "overrides": {
+      "name": "Объём двигателя",
+      "singular_name": "Объём двигателя",
+      "search_items": "Search Объём двигателя",
+      "popular_items": "Popular Объём двигателя",
+      "all_items": "All Объём двигателя",
+      "parent_item": "Parent Category",
+      "parent_item_colon": "Parent Category:",
+      "edit_item": "Edit Объём двигателя",
+      "view_item": "View Объём двигателя",
+      "update_item": "Обновить Объём двигателя",
+      "add_new_item": "Добавить New Объём двигателя",
+      "new_item_name": "New Модель Объём двигателя",
+      "separate_items_with_commas": "Separate Объём двигателя with commass",
+      "add_or_remove_items": "Add or remove Объём двигателя",
+      "choose_from_most_used": "Choose from the most used Объём двигателя",
+      "not_found": "No Объём двигателя found.",
+      "no_terms": "No Объём двигателя",
+      "items_list_navigation": "Объём двигателя list navigation",
+      "items_list": "Объём двигателя list"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_nav_menus": true,
+    "show_in_rest": true,
+    "rest_base": "capacity",
+    "rest_controller_class": "WP_REST_Terms_Controller",
+    "show_tagcloud": true,
+    "show_in_quick_edit": true,
+    "show_admin_column": false,
+    "show_in_graphql": true,
+    "capabilities": {
+      "manage_terms": "manage_categories",
+      "edit_terms": "manage_categories",
+      "delete_terms": "manage_categories",
+      "assign_terms": "edit_posts"
+    },
+    "rewrite": {
+      "slug": "capacity",
+      "hierarchical": false
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.social
+    white-space: nowrap
+    &__item
+        margin-right: 16px
+        width: 24px
+        height: 24px
+        &:last-child
+            margin-right: 0
+    &__item_w_text
+        width: auto
+        .social__link
+            padding-right: 8px
+            padding-left: 8px
+            border-radius: 21px
+            font-size: 12px
+            font-weight: 700
+
+    &__link
+        position: relative
+        display: flex
+        justify-content: center
+        height: 100%
+        align-items: center
+        background-color: rgba(255,255,255,.1)
+        color: #fff
+        text-decoration: none
+        text-transform: uppercase
+        border-radius: 50%
+        +tr(.3s linear)
+
+        &:hover
+            color: darken(#fff, 10)
+            +tr(.3s linear)

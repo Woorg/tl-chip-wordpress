@@ -1,0 +1,64 @@
+.header
+  position: fixed
+  z-index: 2
+  top: 0
+  left: 0
+  right: 0
+  background-color: #22232b
+  box-shadow: inset 0 -2px 0 #e51515
+  // overflow: hidden
+  &__container
+    min-width: 129px
+    align-items: center
+    flex-wrap: wrap
+    +mq($large)
+      flex-wrap: nowrap
+      min-height: 72px
+
+  &__logo
+    padding-top: 24px
+    padding-bottom: 24px
+    order: 0
+    +mq($small)
+      order: 0
+
+  &__nav
+    position: absolute
+    top: 24px
+    right: 15px
+    margin-left: auto
+    order: 2
+    +mq($large)
+      position: static
+      // margin-left: 32px
+      order: 1
+
+
+  &__contacts
+      margin-left: 0
+      padding-bottom: 24px
+
+      width: 100%
+      justify-content: flex-end
+      align-items: center
+      flex-wrap: wrap
+      order: 1
+      +mq($large)
+        margin-left: auto
+        padding-top: 24px
+        max-width: 434px
+        justify-content: flex-start
+        flex-wrap: nowrap
+        order: 2
+        white-space: nowrap
+
+  // &__social
+
+  &__phone
+    margin-top: 10px
+    width: 100%
+    justify-content: flex-end
+    +mq($large)
+      margin-top: 0
+      margin-left: 24px
+      justify-content: flex-start

@@ -1,0 +1,96 @@
+mixin benefits(data)
+    section.benefits&attributes(attributes)
+        .benefits__in.container
+            h2.benefits__title.title Преимущества и цены
+            .benefits__grid.flex
+                article.benefits__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-1.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus LX450 4.5d
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 272
+                                        .card__arrow →
+                                        .card__to 350 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +30%
+                                    dd.card__desc.flex
+                                        .card__from 650
+                                        .card__arrow →
+                                        .card__to 845 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+                article.benefits__card.card
+                    .card__in
+                        .card__image
+                            img.lazy(data-src="assets/images/content/catalog-img-2.jpg", alt="")
+                            a.card__feedback(href="#") Отзыв клиента
+                        .card__body
+                            .card__model.flex
+                                != pugHelpers.Icon.call(locals, {iconName: 'lexus-logo', className: 'card__logo'})
+                                .card__model-name Lexus RX 200t
+
+                            dl.card__list
+                                .card__list-item
+                                    dt.card__term Мощность
+                                        span +21%
+                                    dd.card__desc.flex
+                                        .card__from 238
+                                        .card__arrow →
+                                        .card__to 290 л.с
+
+                                .card__list-item
+                                    dt.card__term Крутящий момент
+                                        span +20%
+                                    dd.card__desc.flex
+                                        .card__from 350
+                                        .card__arrow →
+                                        .card__to 420 Hm
+
+                            a.card__price.flex(href="#") Цены и графики
+                                != pugHelpers.Icon.call(locals, {iconName: 'price-arrow', className: 'card__price-icon'})
+
+
+            ul.benefits__prices
+                li.benefits__prices-item Производитель прошивки — TL CHIP
+                li.benefits__prices-item Стоимость программного чип тюнинга (увеличение мощности) — 35 000 р.
+                li.benefits__prices-item Стоимость отключения EGR составляет — 5 000 р. (опция)
+                li.benefits__prices-item Стоимость прошивки АКПП тюнинг-версия ПО — 5 000 р. (опция)
+                li.benefits__prices-item Прошивка производится через диагностический разъем OBD2
+                li.benefits__prices-item Доступна бесплатная услуга чип тюнинга с выездом к автовладельцу (дом, офис)
+
+
+            .benefits__links.flex
+                a.benefits__link(href="#") Читать отзывы автовладельцев
+                    != pugHelpers.Icon.call(locals, {iconName: 'video-arrow', className: 'benefits__link-icon'})
+
+                a.benefits__link(href="#") Видео-замер разгона до и после чип тюнинга
+                    != pugHelpers.Icon.call(locals, {iconName: 'video-arrow', className: 'benefits__link-icon'})
+
+
+
+mixin benefits-wo-grid(data)
+    section.benefits&attributes(attributes)
+        .benefits__in.container
+            h2.benefits__title.title Преимущества и цены
+
+            ul.benefits__prices
+                li.benefits__prices-item Производитель прошивки — TL CHIP
+                li.benefits__prices-item Стоимость программного чип тюнинга (увеличение мощности) — 35 000 р.
+                li.benefits__prices-item Стоимость отключения EGR составляет — 5 000 р. (опция)
+                li.benefits__prices-item Стоимость прошивки АКПП тюнинг-версия ПО — 5 000 р. (опция)
+                li.benefits__prices-item Прошивка производится через диагностический разъем OBD2
+                li.benefits__prices-item Доступна бесплатная услуга чип тюнинга с выездом к автовладельцу (дом, офис)

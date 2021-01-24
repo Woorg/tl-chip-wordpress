@@ -1,0 +1,199 @@
+mixin feedback(data)
+    section.feedback&attributes(attributes)
+        .feedback__in.container
+            h2.feedback__title.title Отзывы наших клиентов
+            != pugHelpers.Icon.call(locals, {iconName: 'quote-icon', className: 'feedback__bg'})
+            .feedback__slider.swiper-container
+                .feedback__slider-wrapper.swiper-wrapper
+                    .feedback__slide.swiper-slide
+                        .feedback__slide-in
+                            .feedback__body
+                                .feedback__body-title Отлично!
+                                .feedback__body-text Хочу поблагодарить коллектив компании TL CHIP за отлично проведенный чип тюнинг моего Land Cruiser Prado. <br/>Машина стала совсем другой. Динамики прибавилось значительно (173 л.с. в заводском варианте конечно для неё мало).
+                                a.feedback__link.flex(href="#") Читать далее
+                                    != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'feedback__icon'})
+
+                            .feedback__author-w.flex
+                                .feedback__author.flex
+                                    .feedback__avatar
+                                        img.feedback__avatar-img(src="assets/images/content/feedback-photo.png", alt="")
+
+                                    .feedback__author-content
+                                        .feedback__author-name НеАнтон2 Марков
+                                        .feedback__author-model Land Cruiser Prado
+
+                    .feedback__slide.swiper-slide
+                        .feedback__slide-in
+                            .feedback__body
+                                .feedback__body-title Супер!
+                                .feedback__body-text Хочу поблагодарить коллектив компании TL CHIP за отлично проведенный чип тюнинг моего Land Cruiser Prado. <br/>Машина стала совсем другой. Динамики прибавилось значительно (173 л.с. в заводском варианте конечно для неё мало).
+                                a.feedback__link.flex(href="#") Читать далее
+                                    != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className:    'feedback__icon'})
+
+                            .feedback__author-w.flex
+                                .feedback__author.flex
+                                    .feedback__avatar
+                                        img.feedback__avatar-img(src="assets/images/content/feedback-photo.png", alt="")
+
+                                    .feedback__author-content
+                                        .feedback__author-name Антон Марков
+                                        .feedback__author-model Land Cruiser Prado
+
+                    .feedback__slide.swiper-slide
+                        .feedback__slide-in
+                            .feedback__body
+                                .feedback__body-title Отлично!
+                                .feedback__body-text Хочу поблагодарить коллектив компании TL CHIP за отлично проведенный чип тюнинг моего Land Cruiser Prado. <br/>Машина стала совсем другой. Динамики прибавилось значительно (173 л.с. в заводском варианте конечно для неё мало).
+                                a.feedback__link.flex(href="#") Читать далее
+                                    != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'feedback__icon'})
+
+                            .feedback__author-w.flex
+                                .feedback__author.flex
+                                    .feedback__avatar
+                                        img.feedback__avatar-img(src="assets/images/content/feedback-photo.png", alt="")
+
+                                    .feedback__author-content
+                                        .feedback__author-name Антон Марков
+                                        .feedback__author-model Land Cruiser Prado
+
+
+
+                .feedback__pagination.swiper-pagination.flex
+
+
+mixin feedback-full(data)
+    section.feedback.feedback_full&attributes(attributes)
+        .feedback__in.container
+            h1.feedback__title.title Отзывы наших клиентов
+
+            .feedback__text.text
+                p Наше программное обеспечение многократно протестировано на Toyota и Lexus, так как мы сконцентрированы на данном бренде, что подтверждено отзывами автовладельцев.
+
+            .feedback__attention
+                .feedback__attention-title Внимание!
+                .feedback__attention-text Опасайтесь подделок программного обеспечения ! Есть «умельцы», которые скачивают прошивки из интернета, говорят Вам «дешевую» цену, чтобы привлечь Вас и фактически на Вашем автомобиле провести испытания «неизвестного» программного обеспечения.
+
+
+
+            .feedback__text.text
+                p Познакомимся поближе или интервью с ведущим специалистом TL CHIP: <a href="#">Смотреть</a><br/>Мы являемся Партнером международного форума Land Cruiser: Prado-club.su и можем поделиться реальными отзывами автовладельцев Land Cruiser:
+
+            .feedback__slider.swiper-container
+                .feedback__slider-wrapper.swiper-wrapper
+                    .feedback__slide.swiper-slide
+                        .feedback__slide-in
+                            .feedback__body
+                                .feedback__body-title Отлично!
+                                .feedback__body-text Хочу поблагодарить коллектив компании TL CHIP за отлично проведенный чип тюнинг моего Land Cruiser Prado. <br/>Машина стала совсем другой. Динамики прибавилось значительно (173 л.с. в заводском варианте конечно для неё мало).
+                                a.feedback__link.flex(href="#") Читать далее
+                                    != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'feedback__icon'})
+
+                            .feedback__author-w.flex
+                                .feedback__author.flex
+                                    .feedback__avatar
+                                        img.feedback__avatar-img(src="assets/images/content/feedback-photo.png", alt="")
+
+                                    .feedback__author-content
+                                        .feedback__author-name Антон Марков
+                                        .feedback__author-model Land Cruiser Prado
+
+                    .feedback__slide.swiper-slide
+                        .feedback__slide-in
+                            .feedback__body
+                                .feedback__body-title Супер!
+                                .feedback__body-text Хочу поблагодарить коллектив компании TL CHIP за отлично проведенный чип тюнинг моего Land Cruiser Prado. <br/>Машина стала совсем другой. Динамики прибавилось значительно (173 л.с. в заводском варианте конечно для неё мало).
+                                a.feedback__link.flex(href="#") Читать далее
+                                    != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className:    'feedback__icon'})
+
+                            .feedback__author-w.flex
+                                .feedback__author.flex
+                                    .feedback__avatar
+                                        img.feedback__avatar-img(src="assets/images/content/feedback-photo.png", alt="")
+
+                                    .feedback__author-content
+                                        .feedback__author-name Антон Марков
+                                        .feedback__author-model Land Cruiser Prado
+
+                    .feedback__slide.swiper-slide
+                        .feedback__slide-in
+                            .feedback__body
+                                .feedback__body-title Отлично!
+                                .feedback__body-text Хочу поблагодарить коллектив компании TL CHIP за отлично проведенный чип тюнинг моего Land Cruiser Prado. <br/>Машина стала совсем другой. Динамики прибавилось значительно (173 л.с. в заводском варианте конечно для неё мало).
+                                a.feedback__link.flex(href="#") Читать далее
+                                    != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'feedback__icon'})
+
+                            .feedback__author-w.flex
+                                .feedback__author.flex
+                                    .feedback__avatar
+                                        img.feedback__avatar-img(src="assets/images/content/feedback-photo.png", alt="")
+
+                                    .feedback__author-content
+                                        .feedback__author-name Антон Марков
+                                        .feedback__author-model Land Cruiser Prado
+
+
+
+                .feedback__pagination.swiper-pagination.flex
+
+
+mixin feedback-white(data)
+    section.feedback.feedback_full.feedback_t_white&attributes(attributes)
+        .feedback__in.container
+            h1.feedback__title.title Отзывы наших клиентов
+
+            .feedback__text.text
+                p Наше программное обеспечение многократно протестировано на Toyota и Lexus, так как мы сконцентрированы на данном бренде, что подтверждено отзывами автовладельцев.
+
+            .feedback__attention
+                .feedback__attention-title Внимание!
+                .feedback__attention-text Опасайтесь подделок программного обеспечения ! Есть «умельцы», которые скачивают прошивки из интернета, говорят Вам «дешевую» цену, чтобы привлечь Вас и фактически на Вашем автомобиле провести испытания «неизвестного» программного обеспечения.
+
+            .feedback__text.text
+                p Познакомимся поближе или интервью с ведущим специалистом TL CHIP: <a href="#">Смотреть</a><br/>Мы являемся Партнером международного форума Land Cruiser: Prado-club.su и можем поделиться реальными отзывами автовладельцев Land Cruiser:
+
+
+            .feedback__forum-list
+                article.feedback__forum-item
+                    .feedback__forum-in
+                        .feedback__forum-top.flex
+                            .feedback__forum-model Land Cruiser 200, 4.5d
+                            a.feedback__forum-link(href="#") Читать отзыв
+
+                        a.feedback__image(href="assets/images/content/feedback-img-1.png")
+                            img.lazy(data-src="assets/images/content/feedback-img-1.png", alt="")
+
+                article.feedback__forum-item
+                    .feedback__forum-in
+                        .feedback__forum-top.flex
+                            .feedback__forum-model Land Cruiser 200, 4.5d
+                            a.feedback__forum-link(href="#") Читать отзыв
+
+                        a.feedback__image(href="assets/images/content/feedback-img-1.png")
+                            img.lazy(data-src="assets/images/content/feedback-img-1.png", alt="")
+
+                article.feedback__forum-item
+                    .feedback__forum-in
+                        .feedback__forum-top.flex
+                            .feedback__forum-model Land Cruiser 200, 4.5d
+                            a.feedback__forum-link(href="#") Читать отзыв
+
+                        a.feedback__image(href="assets/images/content/feedback-img-1.png")
+                            img.lazy(data-src="assets/images/content/feedback-img-1.png", alt="")
+
+                article.feedback__forum-item
+                    .feedback__forum-in
+                        .feedback__forum-top.flex
+                            .feedback__forum-model Land Cruiser 200, 4.5d
+                            a.feedback__forum-link(href="#") Читать отзыв
+
+                        a.feedback__image(href="assets/images/content/feedback-img-1.png")
+                            img.lazy(data-src="assets/images/content/feedback-img-1.png", alt="")
+
+                article.feedback__forum-item
+                    .feedback__forum-in
+                        .feedback__forum-top.flex
+                            .feedback__forum-model Land Cruiser 200, 4.5d
+                            a.feedback__forum-link(href="#") Читать отзыв
+
+                        a.feedback__image(href="assets/images/content/feedback-img-1.png")
+                            img.lazy(data-src="assets/images/content/feedback-img-1.png", alt="")

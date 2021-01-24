@@ -1,0 +1,76 @@
+{
+  "active": true,
+  "type": "cpt",
+  "name": "Examples",
+  "supports": [
+    "title",
+    "editor",
+    "comments",
+    "revisions",
+    "trackbacks",
+    "author",
+    "excerpt",
+    "page-attributes",
+    "thumbnail",
+    "custom-fields",
+    "post-formats"
+  ],
+  "labels": {
+    "has_one": "Пример",
+    "has_many": "Примеры",
+    "text_domain": "sage",
+    "overrides": {
+      "name": "Примеры",
+      "singular_name": "Пример",
+      "menu_name": "Примеры",
+      "name_admin_bar": "Примеры",
+      "add_new": "Добавить Пример",
+      "add_new_item": "Добавить новый Пример",
+      "edit_item": "Редактировать Пример",
+      "new_item": "Новый Пример",
+      "view_item": "Смотреть Пример",
+      "view_items": "Смотреть Примеры",
+      "search_items": "Поиск Примера",
+      "not_found": "Примеров не найдено.",
+      "not_found_in_trash": "В корзине ничего не найдено.",
+      "parent_item-colon": "Родительские Примеры:",
+      "all_items": "Все Примеры",
+      "archives": "Архив Примеров",
+      "attributes": "Атрибуты Примера",
+      "insert_into_item": "Вставить в Пример",
+      "uploaded_to_this_item": "Загружено в этот Пример",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "фильтровать список Примеров",
+      "items_list_navigation": "Навигация по списку Примеров",
+      "items_list": "Список Примеров"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_rest": true,
+    "query_var": true,
+    "has_archive": true,
+    "show_in_graphql": true,
+    "graphql_single_name": "example",
+    "graphql_plural_name": "examples",
+    "hierarchical": true,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+      "model"
+    ],
+    "rewrite": {
+      "slug": "examples",
+      "with_front": true,
+      "feeds": true,
+      "pages": true
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "active": true,
+  "type": "cat",
+  "name": "model",
+  "links": [
+    "cars",
+    "examples"
+  ],
+  "labels": {
+    "has_one": "Модель",
+    "has_many": "Модели",
+    "text_domain": "sage",
+    "overrides": {
+      "name": "Модели",
+      "singular_name": "Модель",
+      "search_items": "Search Модели",
+      "popular_items": "Popular Модели",
+      "all_items": "All Модели",
+      "parent_item": "Parent Category",
+      "parent_item_colon": "Parent Category:",
+      "edit_item": "Edit Модель",
+      "view_item": "View Моделб",
+      "update_item": "Обновить Модель",
+      "add_new_item": "Добавить New Модель",
+      "new_item_name": "New Модель Name",
+      "separate_items_with_commas": "Separate Модели with commass",
+      "add_or_remove_items": "Add or remove Модели",
+      "choose_from_most_used": "Choose from the most used Моделей",
+      "not_found": "No Модели found.",
+      "no_terms": "No Моделей",
+      "items_list_navigation": "Моделей list navigation",
+      "items_list": "Моделей list"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_nav_menus": true,
+    "show_in_rest": true,
+    "rest_base": "model",
+    "rest_controller_class": "WP_REST_Terms_Controller",
+    "show_tagcloud": true,
+    "show_in_quick_edit": true,
+    "show_admin_column": false,
+    "show_in_graphql": true,
+    "graphql_single_name": "model",
+    "graphql_plural_name": "models",
+    "capabilities": {
+      "manage_terms": "manage_categories",
+      "edit_terms": "manage_categories",
+      "delete_terms": "manage_categories",
+      "assign_terms": "edit_posts"
+    },
+    "rewrite": {
+      "slug": "model",
+      "hierarchical": false
+    }
+  }
+}

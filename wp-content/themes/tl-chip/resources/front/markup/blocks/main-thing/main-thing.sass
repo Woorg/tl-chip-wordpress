@@ -1,0 +1,77 @@
+.main-thing
+    &__in
+        padding-top: (48px / 2)
+        padding-bottom: (160px / 2)
+        +mq($small)
+            padding-top: 48px
+            padding-bottom: 160px
+    &__title
+        margin-bottom: (48px / 2)
+        +mq($small)
+            margin-bottom: 48px
+
+    &__text
+        margin-bottom: (48px / 2)
+        +mq($small)
+            margin-bottom: 48px
+
+    &__list
+        margin-bottom: (48px / 2)
+        +mq($small)
+            margin-bottom: 28px
+
+    &__term
+        margin-bottom: (48px / 2)
+        font-size: 18px
+        font-weight: 600
+        line-height: 1.333
+        +mq($small)
+            font-size: 24px
+            margin-bottom: 48px
+
+    &__term ~ .main-thing__desc
+        position: relative
+        top: -36px
+        // margin-bottom: 16px
+
+    &__desc
+        font-size: 16px
+        font-weight: 400
+        line-height: 1.625
+        a
+            color: #e51515
+            font-size: 16px
+            font-weight: 500
+            text-decoration: none
+            +tr(.3s linear)
+
+            &:hover
+                color: darken(#e51515, 10)
+                +tr(.3s linear)
+
+    &__important
+        margin-right: -15px
+        margin-left: -15px
+        padding-right: 15px
+        padding-left: 15px
+        border-radius: 10px
+        background-color: #ffffff
+
+    &__important-in
+        padding-top: 48px
+        padding-right: 48px
+        padding-bottom: 48px
+        padding-left: 48px
+        box-shadow: 0 2px 24px rgba(0, 0, 0, 0.08), 0 0 2px rgba(0, 0, 0, 0.08)
+        +mq($small)
+            padding-right: 248px
+
+    &__important-title
+        margin-bottom: 16px
+        font-size: 24px
+        font-weight: 600
+        line-height: 1.333
+    &__important-text
+        font-size: 16px
+        font-weight: 400
+        line-height: 1.625

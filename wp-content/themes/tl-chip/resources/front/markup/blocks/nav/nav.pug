@@ -1,0 +1,21 @@
+mixin nav(data)
+    nav.nav&attributes(attributes)
+        //- input#nav__trigger.nav__checkbox(type="checkbox" )
+        //- label.nav__label(for="nav__trigger")
+        button.nav__trigger
+            != pugHelpers.Icon.call(locals, {iconName: 'menu-icon', className: 'nav__icon_open'})
+            != pugHelpers.Icon.call(locals, {iconName: 'menu-close', className: 'nav__icon_close'})
+
+        ul.nav__list.flex
+            li.nav__item
+                a.nav__link(href="#")
+                    span Гарантия
+            li.nav__item
+                a.nav__link(href="#")
+                    span Отзывы
+            li.nav__item
+                a.nav__link(href="#")
+                    span FAQ
+            li.nav__item.nav__item_active
+                a.nav__link(href="#")
+                    span Контакты

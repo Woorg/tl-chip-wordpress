@@ -1,0 +1,74 @@
+{
+  "active": true,
+  "type": "cpt",
+  "name": "Cars",
+  "supports": [
+    "title",
+    "editor",
+    "comments",
+    "revisions",
+    "trackbacks",
+    "author",
+    "excerpt",
+    "page-attributes",
+    "thumbnail",
+    "custom-fields",
+    "post-formats"
+  ],
+  "labels": {
+    "has_one": "Car",
+    "has_many": "Машины",
+    "text_domain": "sage",
+    "overrides": {
+      "name": "Машины",
+      "singular_name": "Машина",
+      "menu_name": "Машины",
+      "name_admin_bar": "Машина",
+      "add_new": "Add Машину",
+      "add_new_item": "Add New Машину",
+      "edit_item": "Edit Машину",
+      "new_item": "New Машина",
+      "view_item": "View Машину",
+      "view_items": "View Машины",
+      "search_items": "Search Машины",
+      "not_found": "No Машин found.",
+      "not_found_in_trash": "No Машин found in Trash.",
+      "parent_item-colon": "Parent Машины:",
+      "all_items": "All Машины",
+      "archives": "Каталог авто",
+      "attributes": "Машина Attributes",
+      "insert_into_item": "Insert into Машину",
+      "uploaded_to_this_item": "Uploaded to this Машине",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "Filter Машин list",
+      "items_list_navigation": "Машин list navigation",
+      "items_list": "Машин list"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_rest": true,
+    "query_var": true,
+    "has_archive": true,
+    "hierarchical": true,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+      "model",
+      "car-brand"
+    ],
+    "rewrite": {
+      "slug": "cars",
+      "with_front": true,
+      "feeds": true,
+      "pages": true
+    }
+  }
+}
